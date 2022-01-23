@@ -6,6 +6,7 @@ import Home from './Components/Home';
 import NextWeek from './Components/NextWeek';
 import Header from './Components/Header';
 import ThisWeek from './Components/ThisWeek';
+import YourThoughts from './Components/YourThoughts';
 
 
 function App() {
@@ -13,12 +14,12 @@ function App() {
     <BrowserRouter>
     <div className="App">
       
-      
+      <Home/>
       <Routes>
     <Route path='Home' element={<Home/>}/>
     <Route path='NextWeek' element={<NextWeek/>}/>
     <Route path='ThisWeek' element={<ThisWeek/>}/>
-
+    <Route path='YourThoughts' element={<YourThoughts/>}/>
 
 
 

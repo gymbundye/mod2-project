@@ -16,6 +16,11 @@ function Nav(){
             <Link to='ThisWeek'>
                 <li>This Week!</li>
             </Link>
+            <Link to='YourThoughts'>
+                <li>
+                    Your Thoughts?
+                </li>
+            </Link>
         
 
 
