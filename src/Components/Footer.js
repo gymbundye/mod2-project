@@ -1,7 +1,10 @@
+import React from "react";
 function Footer(){
 return(
     <div className="Footer">
-        <h1>Footer</h1>
+        <h4>
+            <center>Contact Us</center>
+        </h4>
     </div>
 );
 

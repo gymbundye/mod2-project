@@ -7,20 +7,20 @@ import NextWeek from './Components/NextWeek';
 import Header from './Components/Header';
 import ThisWeek from './Components/ThisWeek';
 import YourThoughts from './Components/YourThoughts';
-
+import  Search from './Components/Search';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
+      <Header/>
       
-      <Home/>
       <Routes>
     <Route path='Home' element={<Home/>}/>
     <Route path='NextWeek' element={<NextWeek/>}/>
     <Route path='ThisWeek' element={<ThisWeek/>}/>
     <Route path='YourThoughts' element={<YourThoughts/>}/>
-
+    <Route path='Search' element={<Search/>}/>
 
 
 

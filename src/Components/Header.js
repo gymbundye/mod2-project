@@ -1,9 +1,10 @@
 import React from 'react';
-
+import Nav from './Nav';
 function Header() {
   return <div className='Header'>
       <h1>
-          Header
+          <center>Movie Club Society!</center>
+          <Nav/>
       </h1>
   </div>;
 }

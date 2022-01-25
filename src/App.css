@@ -1,15 +1,34 @@
 .Header{
-  background-color: black;
+  border: solid;
+  background-image: linear-gradient(to right, red, gold);
   position: top;
+  text-shadow: 1px 1px white;
 }
 .Footer{
-  background-color: black;
-  position: bottom;
+  border: solid;
+  background-image: linear-gradient(to left, red, gold);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .navLinks{
-  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-image: linear-gradient(to bottom, red, gold);
+  height: ;
+  width: ;
   border: solid;
   margin: 10px;
   padding: 10px;
-  
+  border-radius: 10px;
+  box-shadow: black 10px 10px 10px;
+  font-size: 16px;
+  text-shadow: black;
+}
+li{
+  text-decoration: none;
+}
+.NextWeek{
+  border: solid;
 }

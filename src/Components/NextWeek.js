@@ -1,18 +1,8 @@
-import React from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Nav from "./Nav";
-function NextWeek(){
+import React from "react"
+
+ export default function NextWeek(){
     return(
-        <div>
-            <Header/>
-            <h1>NextWeek</h1>
-            <Nav/>
-            <Footer/>
-        </div>
-    );
-    
-    
-    }
-    
-    export default NextWeek
+
+       <div>test</div>
+   )
+}
