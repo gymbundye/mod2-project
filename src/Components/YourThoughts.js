@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Nav from './Nav';
+
 
 function YourThoughts() {
   return <div>
@@ -12,7 +10,7 @@ function YourThoughts() {
           <input type="submit" value="Submit"/>
       </form>
       
-      <Footer/>
+      
   </div>;
 }
 

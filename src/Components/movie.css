@@ -1,0 +1,45 @@
+/*   
+    return(
+        <div className="NextWeek">
+           
+            <h2 className="movie-title">{query.title}</h2>
+           <img className="imgDiv" src="/images/sonoframbow.jpg"></img>
+
+            <p className="movie-tagline">{query.tagline}</p>
+            <p className="overview">{query.overview}</p>
+            <iframe className="frame" width="50%" height="50%" src="https://www.youtube.com/embed/CsAChn35HSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            {console.log(query)}
+            
+        </div> */
+.NextWeek{
+    display: grid;
+    grid-template-areas: "img img title title"
+                         "img img tagline tagline"
+                         "img img desc desc"
+                         "trailer trailer desc desc"
+                         "trailer trailer desc desc"
+                         "trailer trailer desc desc "
+    ;
+    grid-template-columns: 50% 1fr 1fr ;
+    grid-template-rows:  %  1fr;
+
+}
+.movie-title{
+    grid-area: title;
+    
+}
+.imgDiv{
+    grid-area: img;
+
+
+}
+.overview{
+    grid-area: desc;
+}
+.movie-tagline{
+    grid-area: tagline ;
+}
+.frame{
+    grid-area: trailer;
+}

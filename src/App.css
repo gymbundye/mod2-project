@@ -3,32 +3,84 @@
   background-image: linear-gradient(to right, red, gold);
   position: top;
   text-shadow: 1px 1px white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
 }
 .Footer{
   border: solid;
   background-image: linear-gradient(to left, red, gold);
-  position: absolute;
-  bottom: 0;
+  border-radius: 10px;
+  
   width: 100%;
 }
 .navLinks{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   background-image: linear-gradient(to bottom, red, gold);
-  height: ;
-  width: ;
+  
   border: solid;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: black 10px 10px 10px;
   font-size: 16px;
-  text-shadow: black;
+  text-shadow: rgb(190, 247, 58);
 }
 li{
-  text-decoration: none;
+  
+  
+  text-decoration-line: none;
+  color: rgb(10, 10, 9);
+  border: solid;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: black 3px 3px 3px;
 }
 .NextWeek{
+  
+  
+  
   border: solid;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url(/public/images/moviebackground.jpg) ;
+  background-size: cover
+}
+.imgDiv{
+  width: 100px;
+  border: solid 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+  background-image: url(/public/images/moviebackground.jpg) ;
+  
+  
+}
+body{
+  background-color: black;
+}
+.p{
+  display: flex;
+  justify-content: space-between;
+}
+.h2{
+  display: flex;
+  justify-content: space-between;
+}
+.frame{
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  
+}
+.Search{
+  color: white;
+  border: solid;
+  margin: 20px;
+  padding: 20px;
+  
 }
