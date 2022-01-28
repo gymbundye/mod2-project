@@ -9,7 +9,7 @@ import axios from "axios";
     function Random() {
         const [random, setRandom]= useState([])
           useEffect(()=> {
-              axios.get("https://movie-quote-api.herokuapp.com/v1/movie")
+              axios.get("https://geek-jokes.sameerkumar.website/api?format=json")
           .then((res) =>{
               console.log(res.data);
               setRandom(res.data);
@@ -25,11 +25,15 @@ import axios from "axios";
 
 
 
-  return( <div>
+  return(
 
-        {random.text}
-
-  </div>)
+    <div className="Random">
+         ©️
+ {random.joke}
+      </div> 
+    
+    
+)
 }
 
 export default Random;

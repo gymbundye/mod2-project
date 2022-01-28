@@ -1,25 +1,18 @@
 
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import axios from "axios";
 import Footer from "./Footer";
-
+import {GlobalContext} from "../context/GlobalState"
     
      
     
     function Search() {
       const [search, setSearch]= useState([])
       const [query, setQuery]= useState('')
-//       function apiFetch(){
-        
-//         axios.get(`https://api.themoviedb.org/3/search/movie?api_key=0af5b4f32534825e575111d5029fb03e&language=en-US&page=1&include_adult=false&query=${query}`)
-//     .then((res) =>{
-//         console.log(res.data);
-//         setSearch(res.data);
-//     })
-//     .catch((error)=>{
-//         console.log(error);
-//     });
-// };
+      const {addMovieToWatchList, watchlist}= useContext(GlobalContext)
+
+      let storedMovie =watchlist.find(o=> o.id === search.id);
+      const watchlistDisabled = storedMovie ? true: false;
         function Searching(movie){
             setQuery(movie.target.value)
         }
@@ -44,21 +37,28 @@ import Footer from "./Footer";
         <div className="Search">
             <form>
                 <h2 className="searchbar">
-                Searchbar
+                Have a look through our huge database for Movies young and old!
                 </h2>
                 <input type="text" placeholder="Search!" value={query} onChange={search=>(Searching(search))}></input>
             </form>
             {search.map((search, index)=>(
                 <div key={index}>
-                    <div clas>
-                    <p>{search.title}</p>
-                    <p>{search.tagline}</p>
-                    <p>{search.overview}</p>
-                    <img alt="Movie Posters" src={`https://image.tmdb.org/t/p/w500${search.poster_path}`}
-/> 
+                        <div className="poster">
+                        <p>{search.title}</p>
+                        <p>{search.tagline}</p>
+                        <p>{search.overview}</p>
+                        <img width="50%" alt="Movie Posters" src={`https://image.tmdb.org/t/p/w500${search.poster_path}`}/>
+                        <br/>
+                        <button className="btn"
+                         disabled={watchlistDisabled} 
+                         onClick={()=> addMovieToWatchList(search)}>Add to watchlist!</button>
+                    </div> 
+                        
+                        
+                        
                     {/* {console.log(search.results)} */}
                     </div>
-                    </div>
+                    
             ))}
 
     </div>

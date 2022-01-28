@@ -1,12 +1,14 @@
 import React from "react";
 import Random from "./Random";
+import Nav2 from "./Nav2";
 function Footer(){
 return(
     <div className="Footer">
         <h4>
-            <center>Contact Us</center>
+            
         </h4>
-        {/* <Random/> */}
+        <Nav2/>
+         <Random/> 
     </div>
 );
 

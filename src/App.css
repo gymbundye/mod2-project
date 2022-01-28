@@ -2,49 +2,58 @@
   border: solid;
   background-image: linear-gradient(to right, red, gold);
   position: top;
-  text-shadow: 1px 1px white;
+  text-shadow: 1px 1px black;
   border-radius: 20px;
   margin: 20px;
-  padding: 20px;
+  padding: 05px;
+  color: aliceblue;
+  border-color: black;
+  text-decoration-style: none;
 }
 .Footer{
   border: solid;
   background-image: linear-gradient(to left, red, gold);
   border-radius: 10px;
-  
-  width: 100%;
+  margin: 20px;
+  border-color: black;
+  color: aliceblue;
+  text-shadow: black 1px 1px;
 }
 .navLinks{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-decoration-style: none;
   list-style: none;
   background-image: linear-gradient(to bottom, red, gold);
-  
+  color: aliceblue;
   border: solid;
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: black 10px 10px 10px;
   font-size: 16px;
-  text-shadow: rgb(190, 247, 58);
+  border-color: black;
 }
 li{
   
-  
+  text-shadow: black;
   text-decoration-line: none;
-  color: rgb(10, 10, 9);
+  color:white;
   border: solid;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: black 3px 3px 3px;
+  border-color:black ;
 }
 .NextWeek{
   
   
-  
+  color: white;
+  text-shadow: 1px 1px black;
   border: solid;
+  border-color: black;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -52,7 +61,8 @@ li{
   background-size: cover
 }
 .imgDiv{
-  width: 100px;
+  
+  height: 200px;
   border: solid 5px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px black;
@@ -61,8 +71,11 @@ li{
   
 }
 body{
-  background-color: black;
+  background: repeating-radial-gradient(gold,black 1px, red, gold,  red 5px, gold 5px, gold 10px);
+  background-size: 50%;
 }
+
+
 .p{
   display: flex;
   justify-content: space-between;
@@ -72,15 +85,50 @@ body{
   justify-content: space-between;
 }
 .frame{
+  
   border-radius: 10px;
   width: 200px;
   height: 200px;
-  
+  border: solid;
 }
 .Search{
-  color: white;
+  color: aliceblue;
+  text-shadow: black 1px 1px;
   border: solid;
   margin: 20px;
   padding: 20px;
+  border-radius: 20px;
+  border-color: black;
+  background-image: linear-gradient(to bottom, red, gold);
+}
+.poster{
+  border: solid 5px;
+  margin: 20px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, red, gold);
+  border-radius: 10px;
+  border-color: black;
   
+}
+.thoughtsStyle{
+  border: solid;
+  background-image: linear-gradient(to right, red, gold);
+  position: top;
+  color: aliceblue;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  text-shadow: black 1px 1px;
+  border-color: black;
+
+  
+}
+.Random{
+  margin: 20px;
+  font-size: 5px;
+  color: aliceblue;
+  text-shadow: 1px black;
+}
+.Link{
+  text-decoration-style: none;
 }

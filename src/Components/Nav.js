@@ -4,34 +4,24 @@ function Nav(){
         <nav>
             <ul className="navLinks">
 
-        <Link to ='Home'>
+        <Link style={{textDecoration: "none"}} to ='Home'>
             <li>
                 Home
             </li>
             
         </Link>
-
-        <Link to='NextWeek'>
+        <Link style={{textDecoration:"none"}} to='ThisWeek'>
+                <li>This Week!</li>
+            </Link>
+        <Link style={{textDecoration:"none"}} to='NextWeek'>
             <li>
                 Next Week!
             </li>
             </Link>
 
-            <Link to='ThisWeek'>
-                <li>This Week!</li>
-            </Link>
+    
 
-            <Link to='YourThoughts'>
-                <li>
-                    Your Thoughts?
-                </li>
-            </Link>
-
-            <Link to='Search'>
-            <li>
-                Search!
-            </li>
-            </Link>
+        
         
 
 

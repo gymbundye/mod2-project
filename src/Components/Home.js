@@ -4,9 +4,9 @@ import Header from "./Header";
 import Nav from "./Nav";
 function Home(){
     return(
-        <div>
+        <div className="thoughtsStyle">
             
-            <h1>Home</h1>
+            <h3>Who are we?</h3>
             
             
         </div>
