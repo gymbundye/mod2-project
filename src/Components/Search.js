@@ -1,18 +1,19 @@
 
 import React, {useState, useEffect, useContext} from "react";
 import axios from "axios";
-import Footer from "./Footer";
-import {GlobalContext} from "../context/GlobalState"
+
     
      
     
     function Search() {
       const [search, setSearch]= useState([])
       const [query, setQuery]= useState('')
-      const {addMovieToWatchList, watchlist}= useContext(GlobalContext)
+      
 
-      let storedMovie =watchlist.find(o=> o.id === search.id);
-      const watchlistDisabled = storedMovie ? true: false;
+      
+      
+
+
         function Searching(movie){
             setQuery(movie.target.value)
         }
@@ -49,9 +50,7 @@ import {GlobalContext} from "../context/GlobalState"
                         <p>{search.overview}</p>
                         <img width="50%" alt="Movie Posters" src={`https://image.tmdb.org/t/p/w500${search.poster_path}`}/>
                         <br/>
-                        <button className="btn"
-                         disabled={watchlistDisabled} 
-                         onClick={()=> addMovieToWatchList(search)}>Add to watchlist!</button>
+                    
                     </div> 
                         
                         

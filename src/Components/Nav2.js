@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SwitchButton from "../Button";
 function Nav2(){
     return (
         <nav>
@@ -12,7 +13,7 @@ function Nav2(){
                     Your Thoughts?
                 </li>
             </Link>
-
+            
             <Link style={{textDecoration:"none"}} to='Search'>
             <li>
                 Search!
@@ -20,7 +21,7 @@ function Nav2(){
             </Link>
         
 
-
+        <SwitchButton/>
 
 
 

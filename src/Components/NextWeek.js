@@ -27,9 +27,9 @@ import "./movie.css"
       <h2 className="movie-title"><center>{query.title}</center></h2>
      <img className="imgDiv" src="/images/popcorn.jpg"></img>
 
-      <p className="movie-tagline"><center>{query.tagline}</center></p>
+      <center><p className="movie-tagline">{query.tagline}</p></center>
       <p className="overview">{query.overview}</p>
-      <iframe className="frame" width="574" height="323" src="https://www.youtube.com/embed/W0FbB0Y9NV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe className="frame" width="574" height="323" src="https://www.youtube.com/embed/W0FbB0Y9NV8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       
       {console.log(query)}
       

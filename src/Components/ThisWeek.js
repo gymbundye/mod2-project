@@ -23,7 +23,7 @@ import axios from "axios";
     return(
         <div className="NextWeek">
            
-            <h2 className="movie-title"><center>{query.title}</center></h2>
+        <center><h2 className="movie-title">{query.title}</h2></center>
            <img className="imgDiv" src="/images/sonoframbow.jpg"></img>
 
             <p className="movie-tagline"><center>{query.tagline}</center></p>
