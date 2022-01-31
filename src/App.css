@@ -70,7 +70,7 @@ li{
   
   
 }
-body{
+.bg-light{
   background: repeating-radial-gradient(gold,black 1px, red, gold,  red 5px, gold 5px, gold 10px);
   background-size: 50%;
 }
@@ -132,44 +132,61 @@ body{
 .Link{
   text-decoration-style: none;
 }
-/* General Styles */
+
+
+.bg {
+  
+  padding: 50px;
+  overflow: hidden;
+  transition: 0.2s all linear;
+}
+.searchBar{
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+}
+
+
 
 .btn {
   border: none;
-  padding: 10px 30px;
-  border-radius: 4px;
-  margin-top: 20px;
-  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
   cursor: pointer;
   transition: 0.2s all linear;
 }
-
-/* Light Mode Styles */
-
-
-
-
-
-
-
 .btn-light {
-  background-color: #222;
-  color: #fff;
-  font-size: 15px;
-  cursor: pointer;
+  background-image: linear-gradient(to bottom, blue, purple);
+  color: white;
+  text-shadow: 1px 1px black;
+  border: solid black;
+  box-shadow: 1px 1px 1px black;
 }
 
-/* Dark Mode Styles */
 
-.bg-dark {background: repeating-radial-gradient(rgb(33, 205, 228),rgb(175, 11, 207) 1px, rgb(27, 231, 231), rgb(189, 7, 245),  rgb(11, 240, 221) 5px, rgb(232, 6, 240) 5px, rgb(10, 243, 212) 10px);
-background-size: 50%;}
 
-.para-dark {
-  color: #fff;
+.bg-dark {
+  background: repeating-radial-gradient(blue,black 1px, purple, blue,  purple 5px, blue 5px, purple 10px);
+  background-size: 50%;
 }
+
 
 .btn-dark {
-  background-color: #fff;
-  color: #222;
-
+  background-image: linear-gradient(to bottom, red, gold);
+  color: white;
+  text-shadow: 1px 1px black;
+  border: solid black;
+  box-shadow: 1px 1px 1px black;
+}
+.title{
+  color: #fff;
+  text-shadow:
+    0 0 7px rgb(224, 34, 177),
+    0 0 10px #fff,
+    0 0 21px rgb(231, 19, 185),
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
 }

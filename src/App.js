@@ -12,7 +12,7 @@ import  Search from './Components/Search';
 
 
 import {ThemeContext} from "./ThemeContext"
-import SwitchButton from './Button';
+
 import { useContext } from 'react/cjs/react.development';
 function App() {
   const theme = useContext(ThemeContext);
@@ -22,6 +22,8 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <div className={`bg ${darkMode ? "bg-dark" : "bg-light"}`}>
+
+        
       <Header/>
       <Routes>
         <Route path='Home' element={<Home/>}/>

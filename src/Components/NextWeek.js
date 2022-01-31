@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Footer from "./Footer";
-import "./movie.css"
+
+import "./Movie.css"
 
     
      

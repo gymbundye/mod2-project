@@ -40,7 +40,7 @@ import axios from "axios";
                 <h2 className="searchbar">
                 Have a look through our huge database for Movies young and old!
                 </h2>
-                <input type="text" placeholder="Search!" value={query} onChange={search=>(Searching(search))}></input>
+                <input className="searchBar" type="text" placeholder="Search!" value={query} onChange={search=>(Searching(search))}></input>
             </form>
             {search.map((search, index)=>(
                 <div key={index}>
